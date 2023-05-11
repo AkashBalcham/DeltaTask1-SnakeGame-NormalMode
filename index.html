@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Game</title>
+        <link rel="stylesheet" href="task1.css">        <!--Writing CSS in another file and bringing it into this html file-->
+    </head>
+
+    <body>
+        <div class = "display-top">                     <!--Text to be displayed at the top of the screen-->
+            <p class = "score"></p>
+            <p class = "remTime"></p>
+            <p class = "highScore"></p>
+        </div>
+        <div class = "container">                   
+            <div class = "grid">                        <!--500px x 500px grid-->
+                
+                <!--Placing the snake and the food within the grid-->        
+                <div class = "snake-head"></div>
+                <div class = "snake-body"></div>
+                <div class = "snake-tail"></div>
+
+                <div class = "lightblue-food"></div>
+                <div class = "purple-food"></div>
+                <div class = "yellow-food"></div>
+                <div class = "orange-food"></div>
+                <div class = "red-food"></div>
+                
+            </div>
+        </div>
+
+        <!--Control buttons for the snake-->
+        <div class = "up-button">
+            <div class = "vert-up">
+                <button class = "up" onclick="
+                    moveToUp();    
+                ">Up</button>
+            </div>
+        </div>  
+
+        <div class = "left-right-button"> 
+            <div class = "hori">
+                <button class = "left" onclick="
+                    moveToLeft();  
+                ">Left</button>
+                <button class = "right" onclick="
+                    moveToRight();
+                ">Right</button>
+            </div>
+        </div>
+
+        <div>
+            <div class = "vert-down">
+                <button class = "down" onclick="
+                    moveToDown(); 
+                       
+                ">Down</button>
+            </div>
+        </div>        
+
+        <!--Showing the correct order of food colours at the bottom of the screen-->
+        <div class = "order">
+            <p class = "order-text">Order of colours to be eaten</p>
+            <div class = "colors-order">
+                <div class = "lightblue-food-display"></div>
+                <div class = "purple-food-display"></div>
+                <div class = "yellow-food-display"></div>
+                <div class = "orange-food-display"></div>
+                <div class = "red-food-display"></div>
+            </div>
+        </div>
+        
+        <script src="task1.js"></script>        <!--using our js code from task1.js-->
+    </body>
+</html>
